@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia</title>
+    <!-- Link to external stylesheet -->
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <!-- Main container -->
+    <div class = "container">
+        <!-- Header section with title and theme toggler -->
+        <div class = "header-container">
+            <h1> Search Wikipedia</h1>
+            <!-- Theme toggle button -->
+            <span id = "theme-toggler"> Light</span>
+        </div>
+
+        <!-- Search form -->
+        <form id = "search-form">
+            <input type = "text" id = "search-input" placeholder = "Enter search term">
+            <button type = "submit"> Search </button>
+        </form>
+        <!-- Container for displaying search results -->
+        <div id ="search-results"></div>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src = "index.js"> </script>
+</body>
+</html>

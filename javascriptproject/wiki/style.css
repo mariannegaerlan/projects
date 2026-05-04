@@ -1,0 +1,153 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+}
+
+/* Body and typography */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Page heading */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+/* Search form styling */
+#search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+/* Search input field */
+#search-input {
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 0.25rem;
+  flex-grow: 1;
+}
+
+/* Search input focus state */
+#search-input:focus {
+  outline: none;
+  border-color: #0074d9;
+}
+
+/* Submit button styling */
+button[type="submit"] {
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  background-color: #0074d9;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+/* Submit button hover state */
+button[type="submit"]:hover {
+  background-color: #0063ad;
+}
+
+/* Search results container */
+#search-results {
+  margin-bottom: 2rem;
+}
+
+/* Individual result item */
+.result-item {
+  margin-bottom: 1rem;
+}
+
+/* Result title styling */
+.result-title {
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+/* Result link styling */
+.result-link {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #0074d9;
+}
+
+/* Result link hover state */
+.result-link:hover {
+  text-decoration: underline;
+}
+
+/* Result snippet styling */
+.result-snippet {
+  margin-top: 0;
+}
+
+/* Loading spinner */
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  height: 10rem;
+}
+
+/* Dark theme styles */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Theme toggle button */
+#theme-toggler {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  background: #e2e2e2;
+  padding: 10px 20px;
+  border-radius: 100px;
+}
+
+/* Dark theme background and text */
+.dark-theme {
+  background-color: #282c34;
+  color: #fff;
+}
+
+/* Dark theme search input */
+.dark-theme #search-input {
+  background-color: #454545;
+  color: #fff;
+  border-color: #fff;
+}
+
+/* Dark theme search input focus */
+.dark-theme #search-input:focus {
+  border-color: #0074d9;
+}
+
+/* Dark theme submit button */
+.dark-theme button[type="submit"] {
+  background-color: #0074d9;
+}
+
+/* Dark theme result links */
+.dark-theme .result-link,
+.dark-theme .result-link:hover {
+  color: #90caf9;
+}
