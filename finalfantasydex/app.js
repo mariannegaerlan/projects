@@ -67,7 +67,7 @@ function displayCharacters(data) {
 
         grid.innerHTML += `
 
-        <div class="character">
+        <div class="character fade-in">
 
             <img src="${character.image}">
 
@@ -84,6 +84,23 @@ function displayCharacters(data) {
         </div>
 
         `;
+    });
+
+    // Setup fade-in observer for new elements
+    setupFadeInObserver();
+}
+
+function setupFadeInObserver() {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.character.fade-in').forEach(char => {
+        observer.observe(char);
     });
 }
 
@@ -200,3 +217,4 @@ searchbar.addEventListener("keyup", filterCharacters);
 gameFilter.addEventListener("change", filterCharacters);
 
 jobFilter.addEventListener("change", filterCharacters);
+

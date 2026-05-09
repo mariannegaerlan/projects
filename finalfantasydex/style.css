@@ -175,6 +175,8 @@ body
     grid-template-columns: repeat(4, 1fr);
 
     gap: 40px;
+
+    scroll-behavior: smooth;
 }
 
 .character {
@@ -182,6 +184,20 @@ body
     text-align: center;
 
     font-family: Pixelify Sans;
+}
+
+.character.fade-in {
+
+    opacity: 0;
+
+    transition: opacity 0.8s ease; /* Slow fade-in over 0.8 seconds */
+
+}
+
+.character.fade-in.visible {
+
+    opacity: 1;
+
 }
 
 .character img {
